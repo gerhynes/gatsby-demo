@@ -1,6 +1,8 @@
 module.exports = {
   siteMetadata: {
     title: `Pandas Eating Lots`,
+    description: `A site about pandas eating things`,
+    author: `Ger Hynes`,
   },
   plugins: [
     {
@@ -18,6 +20,7 @@ module.exports = {
       },
     },
     `gatsby-plugin-offline`,
+    `gatsby-plugin-react-helmet`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {
