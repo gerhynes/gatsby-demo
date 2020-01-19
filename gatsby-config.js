@@ -5,6 +5,9 @@ module.exports = {
     author: `Ger Hynes`,
   },
   plugins: [
+    `gatsby-transformer-sharp`,
+    `gatsby-plugin-sharp`,
+    { resolve: `gatsby-source-filesystem`, options: { path: `./src/data/` } },
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
